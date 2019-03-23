@@ -16,6 +16,12 @@ export class TaskListComponent implements OnInit {
     ];
   }
 
+  addTask(title) {
+    this.tasks.push({
+      title, done: false
+    });
+  }
+
   ngOnInit() {
   }
 

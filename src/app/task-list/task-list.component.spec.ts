@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TaskListComponent } from './task-list.component';
 import { TaskComponent } from './task/task.component';
+import { EnterTaskComponent } from './enter-task/enter-task.component';
 
 describe('TaskListComponent', () => {
   let component: TaskListComponent;
@@ -9,7 +10,7 @@ describe('TaskListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TaskListComponent, TaskComponent ]
+      declarations: [ TaskListComponent, TaskComponent, EnterTaskComponent ]
     })
     .compileComponents();
   }));
