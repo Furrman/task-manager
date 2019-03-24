@@ -1,2 +1,7 @@
-<app-enter-task (taskEntered)="addTask($event)"></app-enter-task>
-<app-task *ngFor="let task of tasks" [task]="task"></app-task>
+<app-toggle [buttonList]="taskFilterList"
+            [(selectedButton)]="selectedTaskFilter">
+</app-toggle>
+<app-enter-task (taskEntered)="addTask($event)">
+</app-enter-task>
+<app-task *ngFor="let task of getFilteredTasks()"
+          [task]="task"></app-task>
