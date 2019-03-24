@@ -2,12 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { ToggleComponent } from './toggle/toggle.component';
 
 @NgModule({
-  declarations: [CheckboxComponent],
+  declarations: [CheckboxComponent, ToggleComponent],
   imports: [
     CommonModule
   ],
-  exports: [CheckboxComponent]
+  exports: [CheckboxComponent, ToggleComponent]
 })
 export class UiModule { }
